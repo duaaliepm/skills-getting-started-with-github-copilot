@@ -148,13 +148,31 @@ footer {
 }
 
 .participants-list {
-  list-style: none;
+  /* hide default bullet points and reset spacing */
+  list-style: none !important;
+  padding-left: 0;
   padding: 0;
   margin: 8px 0 0 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
+/* Small delete icon next to each participant */
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
 
 .participants-list .participant {
   display: flex;
